@@ -1,0 +1,1 @@
+Django projesi Final Projem dosyasının içinde bulunmaktadır.
