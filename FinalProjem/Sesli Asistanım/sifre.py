@@ -1,0 +1,1 @@
+sifre = "burada kendi şifrenizi girin"
