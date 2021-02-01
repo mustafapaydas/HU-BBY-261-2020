@@ -28,6 +28,7 @@ def dersSayfa():
 def instagir():
     driver = webdriver.Chrome()
     driver.get("https://www.instagram.com/?hl=tr")
+    driver.maximize_window()
     driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label/input').send_keys("mustafapaydaas")
     driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[2]/div/label/input').send_keys(sifre.sifre)
     driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[3]/button/div').click()
@@ -35,6 +36,7 @@ def instagir():
 def twitter():
     driver = webdriver.Chrome()
     driver.get("https://twitter.com/login")
+    driver.maximize_window()
     driver.find_element_by_name('session[username_or_email]').send_keys("mustafapaydass")
     driver.find_element_by_xpath('//*[@id="react-root"]/div/div/div[2]/main/div/div/div[2]/form/div/div[2]/label/div/div[2]/div/input').send_keys(sifre.sifre)
     driver.find_element_by_xpath('//*[@id="react-root"]/div/div/div[2]/main/div/div/div[2]/form/div/div[3]/div/div').click()
